@@ -1,4 +1,4 @@
-if you are using this program, you accept all responsibility.  
+if you are using this program, you accept all responsibility. Only for educational purposes.  
 
 https://www.youtube.com/watch?v=smEHgm0oALo  
 
