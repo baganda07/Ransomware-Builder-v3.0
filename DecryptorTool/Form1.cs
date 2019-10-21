@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Security.Cryptography;
 using System.Windows.Forms;
@@ -80,11 +80,11 @@ namespace DecryptorTool
                 cryptoStream.Close();
                 fileStream.Close();
                 File.Delete(inputFile);
-                MessageBox.Show("Successfully decrypted!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                listBox1.Items.Add("Successfully decrypted: " + inputFile);
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                listBox1.Items.Add("Not decrypted: " + inputFile + ex.Message);
             }
         }
 
@@ -95,6 +95,7 @@ namespace DecryptorTool
 
         private void button1_Click(object sender, EventArgs e)
         {
+            listBox1.Items.Clear();
             Decoding(textBox1.Text, textBox2.Text, textBox3.Text.Replace(".", string.Empty));
         }
     }
